@@ -15,3 +15,10 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+
+
+#lede的ShadowSocksR Plus+出国软件（19.07源码自带passwall出国软件）
+git clone https://github.com/fw876/helloworld.git package/luci-app-ssr-plus
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/redsocks2 package/redsocks2
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/tcpping package/tcpping
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/microsocks package/microsocks
